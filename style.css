@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    flex-direction: column;
+    overflow-x: hidden;
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-size: 13px;
+    background-color: hsl(210, 46%, 95%);
+}
+.all-cards{
+    display: flex;
+    gap: 30px;
+    width: 85%;
+    max-width: 85%;
+    margin: 50px auto;
+}
+.bloc-card-one{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    gap: 30px;
+}
+.bloc-card-two{
+    width: 23%;
+    background-color: white;
+}
+.bloc-card-two p{
+    line-height: 22px;
+}
+.bloc-one,.bloc-two{
+    display: flex;
+    gap: 30px;
+}
+.card{
+    border-radius: 10px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    line-height: 20px;
+    box-shadow: 5px 5px 20px hsla(224, 32%, 88%, 0.527), -5px 5px 20px hsla(224, 32%, 88%, 0.527);
+}
+.card h2{
+    font-size: 19px;
+    line-height: 22px;
+    font-weight: 500;
+}
+.card-one{
+    width: 65%;
+    background: url(images/bg-pattern-quotation.svg) no-repeat, hsl(263, 55%, 52%);
+    background-position: 350px -5px;
+}
+.card-two{
+    width: 34%;
+    justify-self: space-around;
+    background-color: hsl(217, 19%, 35%);
+}
+.card-three{
+    width: 34%;
+    justify-self: space-between;
+    background-color: white;
+}
+.card-four{
+    width: 65%;
+    background-color: hsl(219, 29%, 14%);
+}
+.head-name-person{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.head-name-person img{
+    border-radius: 100px;
+    width: 35px;
+    border: 2px solid hsla(0, 0%, 100%, 0.5);
+}
+.card-four img{
+    border: 2px solid hsla(263, 55%, 52%,0.5);
+}
+.head-name-person .text-name{
+    display: flex;
+    flex-direction: column;
+}
+.color-white h2,.color-white .name-color-white{
+    color: white;
+}
+.color-white p{
+    color: rgba(255, 255, 255, 0.7);
+
+}
+.color-white .statut-color{
+    color: rgba(255, 255, 255, 0.5);
+}
+.grey p,.bloc-card-two p{
+    color: hsl(217, 19%, 35%);
+}
+.grey h2,.bloc-card-two h2,.grey .name-color-grey,.bloc-card-two .name-color-grey{
+    font-weight: 600;
+    color: hsl(217, 19%, 35%);
+}
+.grey .statut-color-grey,.bloc-card-two .statut-color-grey{
+    color: hsla(217, 19%, 35%,0.5);
+    
+}
+@media (min-width: 320px) and (max-width: 1200px){
+    .all-cards,.bloc-card-one,.bloc-one,.bloc-two{
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .card{
+        width: 100%;
+    }
+}
