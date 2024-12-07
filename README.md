@@ -30,7 +30,7 @@ Users should be able to:
 ### Links
 
 
-- Live Site URL: [testimonials grid section](https://your-live-site-url.com)
+- Live Site URL: [testimonials grid section](https://testimonials-grid-section-chi-tawny.vercel.app/)
 
 ## My process
 
